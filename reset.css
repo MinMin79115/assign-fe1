@@ -12,3 +12,293 @@ li {
   margin: 0;
   padding: 0;
 }
+
+body {
+  font-family: "crazy pixel", sans-serif;
+  line-height: 1.6;
+  color: #a2c758;
+  background-color: #f9f9f9;
+  background-image: url(https://cdn.glitch.global/09cfce65-3a9d-4307-9d05-fb037f68e179/background.png?v=1688410014589);
+  background-repeat: repeat-y;
+  background-size: 100% auto;
+  font-size: 35px;
+  scroll-behavior: smooth;
+}
+
+/* Header styles */
+header {
+  background-color: #222222;
+  color: #ffffff;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+/* Navbar styles */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1500px;
+  margin: 0 auto;
+  max-height: 50px;
+}
+
+.game-name {
+  font-size: 5rem;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #ffffff;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #a2c758;
+}
+
+/* Main styles */
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Introduction section styles */
+#introduction {
+  text-align: center;
+  padding: 2rem 0;
+  position: relative;
+  margin-bottom: 15rem;
+}
+
+#introduction h1 {
+  font-size: 18rem;
+  margin-bottom: 1rem;
+  margin-top: -5rem;
+}
+
+.download-button {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: #222222;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.download-button:hover {
+  background-color: #444444;
+}
+
+.game-character {
+  position: absolute;
+  top: 50%;
+  right: 46%;
+  max-width: 50%;
+}
+
+.game-character img {
+  max-width: 100%;
+  height: 100px;
+}
+
+/* Gameplay section styles */
+#gameplay {
+  text-align: center;
+  padding: 2rem 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 15rem;
+}
+
+#gameplay h1 {
+  font-size: 6rem;
+  margin-bottom: 1rem;
+}
+
+#gameplay p {
+  font-size: 3rem;
+  line-height: 1.6;
+}
+
+.gameplay-content {
+  margin-bottom: 2rem;
+}
+
+.background {
+  position: relative;
+}
+
+.background img {
+  max-width: 100%;
+  height: auto;
+}
+
+.charrun {
+  position: absolute;
+  bottom: 15%;
+  left: 40%;
+  max-width: 250px;
+  width: 100%;
+  height: auto;
+}
+
+/* Team section styles */
+#team {
+  text-align: center;
+  padding: 5rem 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 10rem;
+}
+
+#team h1 {
+  font-size: 6rem;
+  margin-bottom: 1.5rem;
+}
+
+.team-members {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 4rem;
+}
+
+.team-member {
+  max-width: 150px;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.team-member img {
+  border-radius: 50%;
+  max-width: 100%;
+  height: auto;
+}
+
+.team-member h3 {
+  font-size: 1.5rem;
+}
+
+.team-member p {
+  font-size: 1.5rem;
+}
+
+/* Contact section styles */
+#contact {
+  text-align: center;
+  padding: 2rem 0;
+  position: relative;
+  margin-bottom: 10rem;
+}
+
+#contact h1 {
+  font-size: 6rem;
+  margin-bottom: 1rem;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+}
+
+.contact-item img {
+  max-width: 30px;
+  height: auto;
+  margin-right: 0.5rem;
+}
+
+.contact-item a {
+  text-decoration: none;
+  color: #a2c758;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.feedback-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.feedback-form textarea {
+  flex: 2;
+  resize: vertical;
+  max-height: 6rem;
+}
+
+.feedback-form input,
+.feedback-form textarea {
+  background-color: #f9f9f9;
+  border: 1px solid #a2c758;
+  padding: 0.5rem;
+  font-size: 16px;
+  max-width: 600px;
+  width: 600px;
+}
+
+.feedback-form button {
+  background-color: #222222;
+  color: #ffffff;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .game-name {
+    margin-top: 1rem;
+  }
+
+  nav li {
+    display: block;
+    margin: 1rem 0;
+  }
+
+  main {
+    padding: 1rem;
+  }
+
+  #introduction h1,
+  #gameplay h1,
+  #team h1,
+  #contact h1 {
+    font-size: 4rem;
+  }
+
+  .game-character {
+    max-width: 30%;
+  }
+}
