@@ -22,7 +22,7 @@ body {
   background-repeat: repeat-y;
   background-size: 100% auto;
   font-size: 35px;
-  scroll-behavior: smooth;
+   scroll-behavior: smooth;
 }
 
 /* Header styles */
